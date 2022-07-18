@@ -1,22 +1,50 @@
 .adress-info__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  font-style: normal;
+  margin-bottom: 8px;
+
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
+  }
 }
 
-.adress-info__item+.adress-info__item {
-    margin-top: 9px;
+.adress-info__item + .adress-info__item {
+  margin-top: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .adress-info__link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+    display: block;
+  }
+}
+
+.adress-tab {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }

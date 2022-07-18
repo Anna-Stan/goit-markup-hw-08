@@ -1,51 +1,78 @@
 .client {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
 }
 
-
 .client__title {
-    font-weight: 700;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
     font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
+    line-height: 1.16;
     margin-bottom: 50px;
+  }
 }
 
 .client-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
+  }
 }
-
-
 
 .client-list__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #AFB1B8;
-    border: 1px solid #AFB1B8;
-    border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 5%;
+  width: 210px;
+  height: 92px;
+  transition-property: color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    border: 1px solid #2196f3;
+    color: #2196f3;
+  }
+  &:focus {
+    border: 1px solid #2196f3;
+    color: #2196f3;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 92px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 170px;
     height: 92px;
-    transition-property: color, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-     &:hover {
-            border: 1px solid #2196F3;
-            color: #2196F3;
-        };
-        &:focus {
-            border: 1px solid #2196F3;
-            color: #2196F3;
-        }
+  }
 }
 
-
-
-
 .client-list__logo {
-    fill: currentColor;
+  fill: currentColor;
 }

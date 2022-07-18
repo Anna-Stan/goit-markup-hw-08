@@ -13,12 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- <link rel="stylesheet" href="./css/styles.css"> -->
   <link rel="stylesheet" href="./css/main.min.css">
   
 </head>
 
-<body>
+<body class="body">
   <header class="header">
         <div class="container">
         <nav class="nav">
@@ -41,6 +40,59 @@
                 </svg> +38 096 111 11 11</a>
             </li>
          </ul>
+        <button type="button" class="header-btn__mob" >
+            <svg class="header-btn__mob-img" width="24" height="16">
+                <use href="./images/icons.svg#icon-menu_24px"></use>
+            </svg>
+        </button>
+        </div>
+
+
+        
+        <div class="menu-mob is-hidden">
+            <div class="container-menu">
+     <div class="container-menu__nav">
+<button type="button" class="header-menu_close" >
+    <svg class="modal__btn-close" width="18" height="18">
+        <use href="./images/symbol-defs1.svg#icon-Close-2"></use>
+    </svg>
+</button>
+<ul class="menu-mob__list">
+    <li class="menu-mob__item list"><a href="./index.html" class="menu__link-mob link">Студия</a></li>
+    <li class="menu-mob__item list"><a href="./portfolio.html" class="menu__link-mob link">Портфолио</a></li>
+    <li class="menu-mob__item list"><a href="" class="menu__link-mob link">Контакты</a></li>
+</ul>
+</nav>
+</div>
+
+<div class="container-menu__contact">
+<ul class="contact-mob">
+    <li class="contact__item-mob list">
+        <a href="mailto:info@devstudio.com" class="contact-mob__link link mail-logo">
+            info@devstudio.com</a>
+    </li>
+
+    <li class="contact-mob__item list">
+        <a href="tel:+38 096 111 11 11" class="contact-mob__link link tel-logo"> +38 096 111 11 11</a>
+    </li>
+</ul>
+<ul class="mob-menu__media list">
+    <li class="mob-menu__media"><a href="" class="mob-menu__link">
+            Instagram
+        </a></li>
+    <li class="mob-menu__media"><a href="" class="mob-menu__link">
+            Twitter
+        </a></li>
+    <li class="mob-menu__media"><a href="" class="mob-menu__link">
+            Facebook
+        </a></li>
+    <li class="mob-menu__media"><a href="" class="mob-menu__link">LinkedIn
+        </a></li>
+
+</ul>
+ </div>
+            </div>
+          
         </div>
     </header>
 
@@ -87,7 +139,7 @@
         </div>
         </section>
 
-    <!---  <section class="cards">
+     <section class="cards">
             <div class="container">
             <h2 class="cards__title">Чем мы занимаемся</h2>
             <ul class="cards-list">
@@ -113,16 +165,36 @@
             </ul>
             </div>
 
-        </section> -->
+        </section> 
 
-    <!---   <section class="person">
+ <section class="person">
             <div class="container">
              <h2 class="person__title">Наша команда</h2>
              <ul class="person-list">
 
                 <li class="person-list__item list">
-                    <img src="./images/comanda-designer.jpg" alt="Фотография продакт дизайнера"
-                     width="270" class="person-list__img" />
+                    <picture>
+                        <source 
+                        srcset="./images/comanda-designer.jpg 1x,
+                    ./images/product-designer-2x.jpg 2x "
+                    media="(min-width: 1200px)"
+                        
+                        />
+
+                    <source srcset="./images/Product-Designer-tab.jpg 1x,
+                  ./images/Product-Designer-tab-2x.jpg 2x " media="(min-width: 768px)" />
+
+                <source srcset="./images/Prodact-Designer-mob.jpg 1x,
+                 ./images/Product-designer-mob-2x.jpg 2x "
+                     media="(min-width: 320px)" />
+
+                <img srcset="./images/Prodact-Designer-mob.jpg 1x,
+                   ./images/Product-designer-mob-2x.jpg 2x " src="./images/Prodact-Designer-mob.jpg"
+                    alt="Фотография продакт дизайнера"
+                     width="450" 
+                     height="460" class="person-list__img" />
+                    </picture>
+
                      <div class="person-list__about">
                     <h3 class="person-list__aftertitle">Игорь Демьяненко</h3>
                     <p lang="en" class="person-list__text">Product Designer</p>
@@ -153,8 +225,22 @@
                 </li>
 
                 <li class="person-list__item list">
-                    <img src="./images/comanda-developer.jpg" alt="Фотография фронтенд разработчика"
-                     width="270"class="person-list__img" />
+
+                    <picture>
+                        <source srcset="./images/comanda-developer.jpg 1x,
+                                        ./images/frontend-developer-2x.jpg 2x " media="(min-width: 1200px)" />
+                    
+                        <source srcset="./images/Frontend-Developer-tab.jpg 1x,
+                                      ./images/Frontend-Developer-tab-2x.jpg 2x " media="(min-width: 768px)" />
+                    
+                        <source srcset="./images/Frontend-developer-mob.jpg 1x,
+                                     ./images/Frontend-developer-mob-2x.jpg 2x " media="(min-width: 320px)" />
+                    
+                        <img srcset="./images/Frontend-developer-mob.jpg 1x,
+                                       ./images/Frontend-developer-mob-2x.jpg 2x " src="./images/Frontend-developer-mob.jpg"
+                            alt="Фотография фронтенд разработчика" width="450" height="460" class="person-list__img" />
+                    </picture>
+
                     <div class="person-list__about">
                     <h3 class="person-list__aftertitle">Ольга Репина</h3>
                     <p lang="en" class="person-list__text">Frontend Developer</p><ul class="masters-soc-list list">
@@ -181,8 +267,24 @@
                 </li>
 
                 <li class="person-list__item list">
-                    <img src="./images/comanda-marketing.jpg" alt="Фотография маркетолога"
-                     width="270" class="person-list__img" />
+
+                    <picture>
+                     <source srcset="./images/comanda-marketing.jpg 1x,
+                     ./images/marketing-2x.jpg 2x" media="(min-width: 1200px)" />
+                    
+                     <source srcset="./images/Marketing-tab.jpg 1x,
+                    ./images/Marketing-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                    
+                    <source srcset="./images/Marketing-mob.jpg 1x,
+                   ./images/Marketing-mob-2x.jpg 2x" media="(min-width: 320px)" />
+                    
+                     <img srcset="./images/Marketing-mob.jpg 1x,
+                     ./images/Marketing-mob-2x.jpg 2x"
+                    src="./images/Marketing-mob.jpg" alt="Фотография маркетолога" width="450" height="460"
+                         class="person-list__img" />
+                    </picture>
+                
+                   
                     <div class="person-list__about">
                     <h3 class="person-list__aftertitle">Николай Тарасов</h3>
                     <p lang="en" class="person-list__text">Marketing</p>
@@ -209,8 +311,26 @@
                 </li>
 
                 <li class="person-list__item list">
-                    <img src="./images/comanda-ULdesigner.jpg" alt="Фотография веб-дизайнера" 
-                    width="270" class="person-list__img" />
+
+                    <picture>
+                     <source srcset="./images/comanda-ULdesigner.jpg 1x,
+                     ./images/designer-2x.jpg 2x " media="(min-width: 1200px)" />
+                    
+                     <source srcset="./images/Designer-tab.jpg 1x,
+                    ./images/Designer-tab-2x.jpg 2x " media="(min-width: 768px)" />
+                    
+                    <source srcset="./images/Designer-mob.jpg 1x,
+                   ./images/Designer-mob-2x.jpg 2x " media="(min-width: 320px)" />
+                    
+                     
+                   <img srcset="./images/Designer-mob.jpg 1x,
+                     ./images/Designer-mob-2x.jpg 2x "
+                     src="./images/Designer-mob.jpg" alt="Фотография веб-дизайнера" 
+                    width="450" height="460" class="person-list__img" />
+                        
+                    </picture>
+
+                    
                     <div class="person-list__about">
                     <h3 class="person-list__aftertitle">Михаил Ермаков</h3>
                     <p lang="en" class="person-list__text">UI Designer</p>
@@ -237,9 +357,9 @@
                 </li>
              </ul>
           </div>   
-        </section> -->
+        </section> 
 
-    <!---   <section class="client">
+    <section class="client">
            <div class="container">
                 <h2 class="client__title">Постоянные клиенты</h2>
                 <ul class="client-list list">
@@ -268,12 +388,14 @@
              </div>
 
 
-        </section> -->
+        </section> 
 
     </main>
 
     <footer class="footer">
      <div class="container container__flex">
+
+        <div class="adress-tab">
          <div class="adress">
         <a href="" class="logo link">Web<span class="logo__studio">Studio</span></a>
         <address class="adress-info">
@@ -312,10 +434,9 @@
                     </a>
                 </li>
 
-            </ul>
-    
-        
+            </ul>    
         </section>
+        </div>
 
         <section class="form">
             <h2 class="form__title">Подпишитесь на рассылку</h2>
@@ -343,8 +464,10 @@
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal"><button type="button" class="modal__btn" data-modal-close>
-            <svg class="modal__btn-close" width="11" height="11"><use href="./images/symbol-defs1.svg#icon-Close-2"></use></svg>
+        <div class="modal">
+            <button type="button" class="modal__btn" data-modal-close>
+            <svg class="modal__btn-close" width="11" height="11">
+                <use href="./images/symbol-defs1.svg#icon-Close-2"></use></svg>
         </button>
         <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="blank">
@@ -398,6 +521,7 @@
     </div>
 
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 
 </html>

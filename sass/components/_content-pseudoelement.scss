@@ -1,4 +1,6 @@
-.antena { &:before {content: "";
+.antena {
+  &:before {
+    content: "";
     display: block;
     height: 120px;
     background-image: url(../images/Antena.svg);
@@ -6,12 +8,14 @@
     background-position: center;
     border: 1px solid transparent;
     padding: 25px 100px 25px 100px;
-    background-color: #F5F4FA;
-    margin-bottom: 30px;}
-   
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+  }
 }
 
-.clock { &:before {content: "";
+.clock {
+  &:before {
+    content: "";
     display: block;
     height: 120px;
     background-image: url(../images/clock\ 1.svg);
@@ -19,12 +23,22 @@
     background-position: center;
     border: 1px solid transparent;
     padding: 25px 100px 25px 100px;
-    background-color: #F5F4FA;
-    margin-bottom: 30px;}
-   
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    @media screen and (min-width: 768px) {
+      margin-top: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 0px;
+    }
+  }
 }
 
-.diagram { &:before {content: "";
+.diagram {
+  &:before {
+    content: "";
     display: block;
     height: 120px;
     background-image: url(../images/diagram\ 1.svg);
@@ -32,11 +46,22 @@
     background-position: center;
     border: 1px solid transparent;
     padding: 25px 100px 25px 100px;
-    background-color: #F5F4FA;
-    margin-bottom: 30px;}
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    @media screen and (min-width: 768px) {
+      margin-top: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 0px;
+    }
+  }
 }
 
-.astronavt {&:before {content: "";
+.astronavt {
+  &:before {
+    content: "";
     display: block;
     height: 120px;
     background-image: url(../images/astronaut\ 1.svg);
@@ -44,7 +69,15 @@
     background-position: center;
     border: 1px solid transparent;
     padding: 25px 100px 25px 100px;
-    background-color: #F5F4FA;
-    margin-bottom: 30px;}
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    @media screen and (min-width: 768px) {
+      margin-top: 0px;
+    }
 
+    @media screen and (min-width: 1200px) {
+      margin-top: 0px;
+    }
+  }
 }

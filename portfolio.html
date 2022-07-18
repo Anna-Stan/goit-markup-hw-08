@@ -44,6 +44,53 @@
     </li>
   </ul>
   </div>
+
+  <div class="menu-mob">
+    <div class="container-menu">
+      <div class="container-menu__nav">
+        <button type="button" class="header-menu_close">
+          <svg class="modal__btn-close" width="18" height="18">
+            <use href="./images/symbol-defs1.svg#icon-Close-2"></use>
+          </svg>
+        </button>
+        <ul class="menu-mob__list">
+          <li class="menu-mob__item list"><a href="./index.html" class="menu__link-mob link">Студия</a></li>
+          <li class="menu-mob__item list"><a href="./portfolio.html" class="menu__link-mob link">Портфолио</a></li>
+          <li class="menu-mob__item list"><a href="" class="menu__link-mob link">Контакты</a></li>
+        </ul>
+        </nav>
+      </div>
+  
+      <div class="container-menu__contact">
+        <ul class="contact-mob">
+          <li class="contact__item-mob list">
+            <a href="mailto:info@devstudio.com" class="contact-mob__link link mail-logo">
+              info@devstudio.com</a>
+          </li>
+  
+          <li class="contact-mob__item list">
+            <a href="tel:+38 096 111 11 11" class="contact-mob__link link tel-logo"> +38 096 111 11 11</a>
+          </li>
+        </ul>
+        <ul class="mob-menu__media list">
+          <li class="mob-menu__media"><a href="" class="mob-menu__link">
+              Instagram
+            </a></li>
+          <li class="mob-menu__media"><a href="" class="mob-menu__link">
+              Twitter
+            </a></li>
+          <li class="mob-menu__media"><a href="" class="mob-menu__link">
+              Facebook
+            </a></li>
+          <li class="mob-menu__media"><a href="" class="mob-menu__link">LinkedIn
+            </a></li>
+  
+        </ul>
+      </div>
+    </div>
+  
+  </div>
+
 </header>
 
 <main>
@@ -61,8 +108,22 @@
 
  <ul class="portfolio-cards">
  <li class="portfolio-cards__item list">
-   <div class="portfolio-cards__animation"><img src="./images.portfolio/technokryak.jpg" alt="Веб-сайт Технокряк"
-    width="370" class="portfolio-cards__img" /> 
+   <div class="portfolio-cards__animation">
+    <picture>
+      <source srcset="./images.portfolio/technokryak.jpg " media="(min-width: 1200px)" />
+    
+      <source srcset="./images/technokryak-tab.jpg 1x,
+       ./images/technokryak-tab-2x.jpg 2x" media="(min-width: 768px)" />
+    
+      <source srcset="./images/tehnokryak-mob.jpg 1x
+          ./images/tehnokryak-mob-2x.jpg 2x media="(min-width: 320px)" />
+    
+      
+      <img srcset="./images/tehnokryak-mob.jpg 1x
+          ./images/tehnokryak-mob-2x.jpg 2x" src="./images/tehnokryak-mob.jpg" alt="Веб-сайт Технокряк" width="450"
+        height="296" class="portfolio-cards__img" />
+    </picture>
+
     <p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
     Все это позволит посетителю получить
     исчерпывающие сведения о компании или частном лице.</p>
@@ -74,8 +135,22 @@
  </li>
 
 <li class="portfolio-cards__item list">
-  <div class="portfolio-cards__animation"><img src="./images.portfolio/neworlean.jpg" alt="Дизайн постера New Orlean vs Golden Star"
-   width="370" class="portfolio-cards__img"/><p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+  <div class="portfolio-cards__animation">
+  <picture>
+    <source srcset="./images.portfolio/neworlean.jpg " media="(min-width: 1200px)" />
+  
+    <source srcset="./images/new-Orlean-vs-Golden-Star-tab.jpg 1x,
+    ./images/new-Orlean-vs-Golden-Star-tab-2x.jpg 2x" media="(min-width: 768px)" />
+  
+    <source srcset="./images/new-Orlean-vs-Golden-Star-mob.jpg 1x,
+    ./images/new-Orlean-vs-Golden-Star-mob-2x.jpg 2x" media="(min-width: 320px)" />
+  
+    <img srcset="./images/new-Orlean-vs-Golden-Star-mob.jpg 1x,
+    ./images/new-Orlean-vs-Golden-Star-mob-2x.jpg 2x" src="./images/new-Orlean-vs-Golden-Star-mob.jpg" 
+    alt="Дизайн постера New Orlean vs Golden Star" width="450"
+    height="296" class="portfolio-cards__img" />
+  </picture>
+ <p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
     Все это позволит посетителю получить
     исчерпывающие сведения о компании или частном лице.</p>
   </div>
@@ -86,8 +161,21 @@
 </li>
 
 <li class="portfolio-cards__item list">
-  <div class="portfolio-cards__animation"><img src="./images.portfolio/seafood.jpg" 
-  alt="Приложение для ресторана Seafood" width="370" class="portfolio-cards__img" /><p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+  <div class="portfolio-cards__animation">
+    <picture>
+      <source srcset="./images.portfolio/seafood.jpg " media="(min-width: 1200px)" />
+    
+      <source srcset="./images/seafood-tab.jpg 1x,
+      ./images/seafood-tab-2x.jpg 2x" media="(min-width: 768px)" />
+    
+      <source srcset="./images/seafood-mob.jpg 1x,
+      ./images/seafood-mob-2x.jpg 2x media="(min-width: 320px)" />
+    
+      <img srcset="./images/seafood-mob.jpg 1x,
+      ./images/seafood-mob-2x.jpg 2x" src="./images/seafood-mob.jpg"
+        alt="Приложение для ресторана Seafood" width="450" height="296" class="portfolio-cards__img" />
+    </picture>
+    <p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
     Все это позволит посетителю получить
     исчерпывающие сведения о компании или частном лице.</p>
  </div>
@@ -99,8 +187,22 @@
 
 
 <li class="portfolio-cards__item list">
-  <div class="portfolio-cards__animation"><img src="./images.portfolio/prime.jpg" alt="Маркетинговые услуги для Проекта Prime"
-   width="370" class="portfolio-cards__img" /><p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+  <div class="portfolio-cards__animation">
+        <picture>
+          <source srcset="./images.portfolio/prime.jpg" media="(min-width: 1200px)" />
+        
+          <source srcset="./images/prime-tab.jpg 1x,
+          ./images/prime-tab-2x.jpg 2x" media="(min-width: 768px)" />
+        
+          <source srcset="./images/prime-mob.jpg 1x,
+              ./images/prime-mob-2x.jpg 2x" media="(min-width: 320px)" />
+        
+          <img srcset="./images/prime-mob.jpg 1x,
+              ./images/prime-mob-2x.jpg 2x" src="./images/prime-mob.jpg" alt="Маркетинговые услуги для Проекта Prime" width="450"
+            height="296" class="portfolio-cards__img" />
+        </picture>
+  
+   <p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
     Все это позволит посетителю получить
     исчерпывающие сведения о компании или частном лице.</p>
    </div>
@@ -111,8 +213,23 @@
 </li>
 
 <li class="portfolio-cards__item list">
-  <div class="portfolio-cards__animation"><img src="./images.portfolio/boxes.jpg" alt="Приложение для проекта Boxes"
-   width="370" class="portfolio-cards__img" /><p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+  <div class="portfolio-cards__animation">
+            <picture>
+              <source srcset="./images.portfolio/boxes.jpg" media="(min-width: 1200px)" />
+            
+              <source srcset="./images/boxes-tab.jpg 1x,
+              ./images/boxes-tab-2x.jpg 2x " media="(min-width: 768px)" />
+            
+              <source srcset="./images/boxes-mob.jpg 1x,
+                          ./images/boxes-mob-2x.jpg 2x" media="(min-width: 320px)" />
+            
+              <img srcset="./images/boxes-mob.jpg 1x,
+                          ./images/boxes-mob-2x.jpg 2x" src="./images/boxes-mob.jpg" 
+                          alt="Приложение для проекта Boxes"
+                width="450" height="296" class="portfolio-cards__img" />
+            </picture>
+   
+   <p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
     Все это позволит посетителю получить
     исчерпывающие сведения о компании или частном лице.</p>
   </div>
@@ -123,8 +240,21 @@
 </li>
 
 <li class="portfolio-cards__item list">
-  <div class="portfolio-cards__animation"><img src="./images.portfolio/inspiration.jpg" alt="Веб-сайт для Inspiration has no Borders"
-   width="370" class="portfolio-cards__img" />
+  <div class="portfolio-cards__animation">
+    <picture>
+      <source srcset="./images.portfolio/inspiration.jpg" media="(min-width: 1200px)" />
+    
+      <source srcset="./images/inspiration-tab.jpg 1x,
+    ./images/inspiration-tab-2x.jpg 2x" media="(min-width: 768px)" />
+    
+      <source srcset="./images/inspiration-mob.jpg 1x,
+         ./images/inspiration-mob.-2x.jpg 2x" media="(min-width: 320px)" />
+    
+      <img srcset="./images/inspiration-mob.jpg 1x,
+         ./images/inspiration-mob.-2x.jpg 2x" src="./images/inspiration-mob.jpg" alt="Веб-сайт для Inspiration has no Borders"
+        width="450" height="296" class="portfolio-cards__img" />
+    </picture>
+    
    <p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
     Все это позволит посетителю получить
     исчерпывающие сведения о компании или частном лице.</p>
@@ -136,8 +266,21 @@
 </li>
 
 <li class="portfolio-cards__item list">
-  <div class="portfolio-cards__animation"><img src="./images.portfolio/limited-edition.jpg" alt="Дизайн для издания Limited Edition"
-   width="370" class="portfolio-cards__img" /><p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+  <div class="portfolio-cards__animation">
+    <picture>
+      <source srcset="./images.portfolio/limited-edition.jpg" media="(min-width: 1200px)" />
+    
+      <source srcset="./images/limited-Edition-tab.jpg 1x,
+      ./images/limited-Edition-tab-2x.jpg 2x" media="(min-width: 768px)" />
+    
+      <source srcset="./images/limited-Edition-mob.jpg 1x,
+      ./images/limited-Edition-mob-2x.jpg 2x" media="(min-width: 320px)" />
+    
+      <img srcset="./images/limited-Edition-mob.jpg 1x,
+      ./images/limited-Edition-mob-2x.jpg 2x" src="./images/limited-Edition-mob.jpg"
+        alt="Дизайн для издания Limited Edition" width="450" height="296" class="portfolio-cards__img" />
+    </picture>
+   <p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
     Все это позволит посетителю получить
     исчерпывающие сведения о компании или частном лице.</p>
   </div>
@@ -148,8 +291,22 @@
 </li>
 
 <li class="portfolio-cards__item list">
-  <div class="portfolio-cards__animation"><img src="./images.portfolio/lab.jpg" alt="Услуги маркетинга для проекта LAB"
-   width="370" class="portfolio-cards__img" /><p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+  <div class="portfolio-cards__animation">
+    <picture>
+      <source srcset="./images.portfolio/lab.jpg" media="(min-width: 1200px)" />
+    
+      <source srcset="./images/lab-tab.jpg 1x,
+      ./images/lab-tab-2x.jpg 2x" media="(min-width: 768px)" />
+    
+      <source srcset="./images/lab-mob.jpg 1x,
+          ./images/lab-mob-2x.jpg 2x" media="(min-width: 320px)" />
+    
+      <img srcset="./images/lab-mob.jpg 1x,
+          ./images/lab-mob-2x.jpg 2x" src="./images/lab-mob.jpg"
+        alt="Услуги маркетинга для проекта LAB" width="450" height="296" class="portfolio-cards__img" />
+    </picture>
+    
+   <p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
     Все это позволит посетителю получить
     исчерпывающие сведения о компании или частном лице.</p>
   </div>
@@ -160,8 +317,22 @@
 </li>
 
 <li class="portfolio-cards__item list">
-  <div class="portfolio-cards__animation"><img src="./images.portfolio/growing-bisnes.jpg" alt="Приложение для Growing Business"
-   width="370" class="portfolio-cards__img" /><p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+  <div class="portfolio-cards__animation">
+    <picture>
+      <source srcset="./images.portfolio/growing-bisnes.jpg" media="(min-width: 1200px)" />
+    
+      <source srcset="./images/growing-Business-tab.jpg 1x,
+      ./images/growing-Business-tab-2x.jpg 2x" media="(min-width: 768px)" />
+    
+      <source srcset="./images/growing-Business-mob.jpg 1x,
+              ./images/growing-Business-mob-2x.jpg 2x" media="(min-width: 320px)" />
+    
+      <img srcset="./images/growing-Business-mob.jpg 1x,
+              ./images/growing-Business-mob-2x.jpg 2x" src="./images/growing-Business-mob.jpg" alt="Приложение для Growing Business" width="450"
+        height="296" class="portfolio-cards__img" />
+    </picture>
+    
+   <p class="portfolio-cards__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
     Все это позволит посетителю получить
     исчерпывающие сведения о компании или частном лице.</p>
    </div>
@@ -178,6 +349,7 @@
 <footer class="footer" >
 
 <div class="container container__flex">
+  <div class="adress-tab">
   <div class="adress">
     <a href="" class="logo link">Web<span class="logo__studio">Studio</span></a>
     <address class="adress-info">
@@ -189,6 +361,7 @@
             11</a></li>
       </ul>
     </address>
+    
   </div>
 
   <section class="media">
@@ -223,6 +396,7 @@
 
 
   </section>
+  </div>
 
   <section class="form">
     <h2 class="form__title">Подпишитесь на рассылку</h2>
@@ -244,6 +418,6 @@
 
 </div>
 </footer>
-
+<script src="./js/menu.js"></script>
 </body>
 </html>

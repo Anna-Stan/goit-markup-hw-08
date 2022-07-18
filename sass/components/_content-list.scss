@@ -1,71 +1,62 @@
 .content {
-@media screen and (min-widht: 768px) {
-        padding-top: 60px;
-         padding-bottom: 60px;
-    }
-    
-    @media screen and (min-widht: 1200px) {
-            padding-top: 94px;
-            padding-bottom: 47px;
-        }
-    
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
 }
 
+.content-list {
+  gap: 30px;
 
-.content-list 
- {display: flex;
-flex-wrap: wrap;
-gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
-
-
 
 .content-list__item {
-   
-    /*---- max-width: 270px; ----*/
-    width: 100%; 
-    width: 354px;
-   /*-- &:not(:last-child) {
+  /*---- max-width: 270px; ----*/
+  width: 100%;
+
+  /*-- &:not(:last-child) {
             margin-right: var(--typical-margin);
         
         } ---*/
-                
- @media screen and (min-widht: 768px) {
-          width: calc((100% - 30px) / 2);
-                  }
 
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
 
-@media screen and (min-widht: 1200px) {
+  @media screen and (min-width: 1200px) {
     max-width: 270px;
-    
-        &:not(:last-child) {
-            margin-right: var(--typical-margin);
-        }
-}
-              
-}
 
+    /*--- &:not(:last-child) {
+      margin-right: var(--typical-margin);---*/
+  }
+}
 
 .content-list__aftertitle {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--title-color);
-    margin-bottom: 10px;
-    @media screen and (min-widht: 768px) {
-            
-        }
-
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+  margin-bottom: 10px;
 }
 
-
 .content-list__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--text-color)
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
 }
