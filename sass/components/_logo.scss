@@ -40,3 +40,27 @@
     line-height: 1.19;
   }
 }
+
+.logo-mob {
+  @media screen and (max-width: 768px) {
+    width: 134px;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+    display: block;
+    .logo-mob__studio {
+      font-family: "Raleway";
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.16;
+      letter-spacing: 0.03em;
+      color: #000000;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
