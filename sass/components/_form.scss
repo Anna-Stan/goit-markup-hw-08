@@ -1,8 +1,8 @@
 .form {
-  max-width: 450px;
+  min-width: 200px;
   height: 156px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (-width: 768px) {
     min-width: 450px;
   }
 
