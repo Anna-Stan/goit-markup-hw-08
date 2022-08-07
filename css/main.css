@@ -1183,6 +1183,11 @@ img {
   max-width: 450px;
   height: 156px;
 }
+@media screen and (min-width: 768px) {
+  .form {
+    min-width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .form {
     min-width: 570px;

@@ -2,6 +2,10 @@
   max-width: 450px;
   height: 156px;
 
+  @media screen and (min-width: 768px) {
+    min-width: 450px;
+  }
+
   @media screen and (min-width: 1200px) {
     min-width: 570px;
     height: 86px;
