@@ -272,7 +272,7 @@ img {
   margin-left: auto;
   width: 40px;
   height: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
   border-radius: 50%;
   background-color: transparent;
   fill: #000000;
@@ -326,7 +326,7 @@ img {
   right: 15px;
   width: 40px;
   height: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
   border-radius: 50%;
   background-color: transparent;
   display: flex;
@@ -537,10 +537,16 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
+    max-width: 696px;
   }
 }
 
@@ -624,6 +630,11 @@ img {
   text-transform: uppercase;
   color: var(--title-color);
   margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .content-list__aftertitle {
+    text-align: center;
+  }
 }
 
 .content-list__text {
@@ -1169,7 +1180,7 @@ img {
 }
 
 .form {
-  min-width: 450px;
+  max-width: 450px;
   height: 156px;
 }
 @media screen and (min-width: 1200px) {
@@ -1200,7 +1211,7 @@ img {
 }
 
 .form-telegram__input {
-  width: 450px;
+  max-width: 480px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1545,8 +1556,6 @@ img {
   .portfolio-cards {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
   }
 }
 
